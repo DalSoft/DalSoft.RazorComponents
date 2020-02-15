@@ -1,0 +1,25 @@
+﻿@page
+@model IndexModel
+
+@{
+    ViewData["Title"] = "Home page";
+}
+
+    <div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+
+
+        <!-- Without DalSoft.RazorComponents -->
+        <component type="typeof(DalSoft.RazorComponents.Example.Pages.Components.Demo)" render-mode="Static" param-message='$"Hello World {DateTime.Now}"' />
+
+        <!-- With DalSoft.RazorComponents -->
+        <hello-world message='$"Hello World {DateTime.Now}"' />
+
+        <!-- Without DalSoft.RazorComponents -->
+        <component type="typeof(DalSoft.RazorClassLibrary.Example.ComponentLibraryTest)" render-mode="Static" />
+
+        <!-- With DalSoft.RazorComponents -->
+        <component-library-test />
+
+        <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    </div>

@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <VersionPrefix>0.0.1</VersionPrefix>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <PackageTags>Razor Pages, Razor Components, ASP.NET, ASP.NET Components, Components</PackageTags>
+
+    <Description>
+      Package allows you to use the same friendly markup for a Razor Component in Razor Pages as you would in Blazor.
+      
+      For example: 
+      
+      &#x3C;mycomponent message=&#x27;$&#x22;Hello World {DateTime.Now}&#x22;&#x27; /&#x3E; 
+      vs 
+      &#x3C;component type=&#x22;typeof(MyComponent)&#x22; render-mode=&#x22;Static&#x22; param-message=&#x27;$&#x22;Hello World {DateTime.Now}&#x22;&#x27; /&#x3E;
+    </Description>
+    
+    <Owners>DalSoft</Owners>
+    
+    <PackageReleaseNotes>
+      First release
+    </PackageReleaseNotes>
+    <PackageIconUrl>https://dalsoft.co.uk/images/icon.png</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/DalSoft/DalSoft.RazorComponents</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/DalSoft/DalSoft.RazorComponents/master/LICENSE</PackageLicenseUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" Version="2.2.8" />
+  </ItemGroup>
+
+</Project>
