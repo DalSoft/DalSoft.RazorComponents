@@ -46,7 +46,7 @@ Add your code to your Razor Component,  for example:
 
 ### Using DalSoft.RazorComponents with your Razor Component
 
-Now you have a Razor Pages or MVC project - your ready to  DalSoft.RazorComponents with your Razor Component.
+Now you have a Razor Pages or MVC project - your ready to use DalSoft.RazorComponents with your Razor Component.
 
 #### Install DalSoft.RazorComponents package via DotNet CLI
 
