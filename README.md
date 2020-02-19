@@ -100,3 +100,15 @@ Now you can use the tag name you specified in your components mapping class. Now
 #### Bonus
 
 This package works perfectly with [Razor components class libraries](https://docs.microsoft.com/en-us/aspnet/core/blazor/class-libraries?view=aspnetcore-3.1&tabs=visual-studio) making it trivial to create reusable components for Razor pages using friendly markup.
+
+#### Limitations
+
+You can't nest components in Razor pages (you can in Blazor) this is a Razor pages limitation.
+
+This won't error but won't work as you expect in Razor pages:
+```html
+<mycontainer>
+    <hello-world message='$"Hello World {DateTime.Now}"' />
+</mycontainer>
+ 
+
