@@ -51,7 +51,7 @@ Now you have a Razor Pages or MVC project - your ready to use DalSoft.RazorCompo
 #### Install DalSoft.RazorComponents package via DotNet CLI
 
 ```bash
-> dotnet add package DalSoft.RestClient
+> dotnet add package DalSoft.RazorComponents
 ```
 
 #### Create a Components mapping class
