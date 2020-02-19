@@ -92,14 +92,16 @@ It will look like this for our example:
 ```
 #### Profit
 
-Now you can use the tag name you specified in your components mapping class. Now in Razor pages you can use friendlier markup for your Razor Component, exactly how you would in a  Blazor app.
+Now in your Razor pages you can use the friendlier tag name for your component that you specified in your components mapping class. 
+
+It now looks like how you would use a Razor component in a  Blazor app.
 ```razor 
 <hello-world message='$"Hello World {DateTime.Now}"' />
 ```
 
 #### Bonus
 
-This package works perfectly with [Razor components class libraries](https://docs.microsoft.com/en-us/aspnet/core/blazor/class-libraries?view=aspnetcore-3.1&tabs=visual-studio) making it trivial to create reusable components for Razor pages using friendly markup.
+This package works perfectly with [Razor components class libraries](https://docs.microsoft.com/en-us/aspnet/core/blazor/class-libraries?view=aspnetcore-3.1&tabs=visual-studio); making it trivial to create reusable components for Razor pages using friendly markup.
 
 #### Limitations
 
