@@ -1,10 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <VersionPrefix>0.0.1</VersionPrefix>
+    <VersionPrefix>0.0.2</VersionPrefix>
     <TargetFramework>netcoreapp3.0</TargetFramework>
     <PackageTags>Razor Pages, Razor Components, ASP.NET, ASP.NET Components, Components</PackageTags>
-
+    <Authors>@DalSoft, @pwhe23</Authors>
     <Description>
       Package allows you to use the same friendly markup for a Razor Component in Razor Pages as you would in Blazor.
       
@@ -18,7 +18,7 @@
     <Owners>DalSoft</Owners>
     
     <PackageReleaseNotes>
-      First release
+      Child components now supported thanks to @pwhe23
     </PackageReleaseNotes>
     <PackageIconUrl>https://dalsoft.co.uk/images/icon.png</PackageIconUrl>
     <PackageProjectUrl>https://github.com/DalSoft/DalSoft.RazorComponents</PackageProjectUrl>
