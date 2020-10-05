@@ -52,6 +52,16 @@ namespace DalSoft.RazorComponents
 
             var parametersWithoutRenderMode = _parameters.Where(x => x.Key != RenderModeName).ToDictionary(x => x.Key.Replace("-", string.Empty), x => x.Value);
 
+            var childContent = output.Content.IsModified
+                ? output.Content.GetContent()
+                : (await output.GetChildContentAsync()).GetContent();
+
+            if (!string.IsNullOrWhiteSpace(childContent))
+            {
+                RenderFragment childcontentFragment = (builder) => builder.AddMarkupContent(0, childContent);
+                parametersWithoutRenderMode["ChildContent"] = childcontentFragment;
+            }
+
             var result = await htmlHelper.RenderComponentAsync<TComponent>(renderMode, parametersWithoutRenderMode);
             
             output.TagName = null; // Reset the TagName. We don't want `component` to render.
