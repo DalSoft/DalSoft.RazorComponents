@@ -9,4 +9,7 @@ namespace RazorPages.WebPack.Pages._Components
 
     [HtmlTargetElement("component-library-test", TagStructure = TagStructure.WithoutEndTag)]
     public class ComponentLibraryTest : ComponentTagHelperBase<DalSoft.RazorClassLibrary.Example.ComponentLibraryTest> { }
+
+    [HtmlTargetElement("ChildDemo")]
+    public class ChildDemo : ComponentTagHelperBase<DalSoft.RazorComponents.Example.Pages.Components.ChildDemo> { }
 }
