@@ -107,7 +107,7 @@ Child components are supported and give you the opportunity to create terser raz
 <grid>
    <row>
       <col align="right">Hello from col 1</col>
-      <col algn="left">Hello from col 2</col>
+      <col align="left">Hello from col 2</col>
     </row>
 </grid>
 ```
