@@ -99,18 +99,36 @@ It now looks like how you would use a Razor component in a  Blazor app.
 <hello-world message='$"Hello World {DateTime.Now}"' />
 ```
 
+#### Child Content / Components
+
+Child components are supported and give you the opportunity to create terser razor for thing like layouts. For example:
+
+```razor
+<grid>
+   <row>
+      <col align="right">Hello from col 1</col>
+      <col algn="left">Hello from col 2</col>
+    </row>
+</grid>
+```
+
+See `<ChildDemo>` in this [example](https://github.com/DalSoft/DalSoft.RazorComponents/blob/master/DalSoft.RazorComponents.Example/Pages/Index.cshtml) for how it works.
+
 #### Bonus
 
 This package works perfectly with [Razor components class libraries](https://docs.microsoft.com/en-us/aspnet/core/blazor/class-libraries?view=aspnetcore-3.1&tabs=visual-studio); making it trivial to create reusable components for Razor pages using friendly markup.
 
 #### Limitations
+Thanks to this [PR](https://github.com/DalSoft/DalSoft.RazorComponents/pull/3) by @pwhe23 this is no longer a limitation.
 
-You can't nest components in Razor pages (you can in Blazor) this is a Razor pages limitation.
+ ~~You can't nest components in Razor pages (you can in Blazor) this is a Razor pages limitation.~~
 
-This won't error but won't work as you expect in Razor pages:
+ ~~This won't error but won't work as you expect in Razor pages:~~
+
 ```html
-<mycontainer>
+<!-- <mycontainer>
     <hello-world message='$"Hello World {DateTime.Now}"' />
-</mycontainer>
+</mycontainer> -->
+ ```
  
 
